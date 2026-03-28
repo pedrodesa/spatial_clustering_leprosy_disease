@@ -28,3 +28,36 @@ SINAN   | Sistema de Informação de Agravos de Notificação do DATASUS, para o
 | e-Gestor | Dados de cobertura de APS e ESF | [e-Gestor Atenção Primária](https://egestoraps.saude.gov.br/) |
 | IBGE | Estimativas populacionais e indicadores socioeconômicos | [IBGE](https://www.ibge.gov.br/) |
 
+## Estrutura do projeto
+```
+.
+├── app
+│   ├── main.py
+│   └── pipeline
+│       ├── extract.py
+│       └── __pycache__
+│           └── extract.cpython-312.pyc
+├── config
+│   ├── config.yml
+│   └── settings.json
+├── data
+│   ├── processed
+│   └── raw
+│       ├── HANSBR18.dbc
+│       ├── HANSBR19.dbc
+│       ├── HANSBR20.dbc
+│       ├── HANSBR21.dbc
+│       ├── HANSBR22.dbc
+│       ├── HANSBR23.dbc
+│       ├── HANSBR24.dbc
+│       └── HANSBR25.dbc
+├── docs
+│   ├── img
+│   └── requisitos.md
+├── R
+│   ├── convert.R
+│   ├── SCRIPT01_data_wrangling.R
+│   └── SCRIPT02_data_analysis.R
+└── README.md
+
+```
